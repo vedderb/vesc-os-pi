@@ -1,0 +1,17 @@
+config BR2_PACKAGE_VESC_TOOL
+	bool "vesc-tool"
+	depends on BR2_PACKAGE_QT5
+	depends on BR2_PACKAGE_QT5BASE
+	depends on BR2_PACKAGE_QT5SERIALPORT
+	depends on BR2_PACKAGE_QT5QUICKCONTROLS
+	depends on BR2_PACKAGE_QT5QUICKCONTROLS2
+	depends on BR2_PACKAGE_QT5CONNECTIVITY
+	depends on BR2_PACKAGE_QT53D
+	depends on BR2_PACKAGE_QT5DECLARATIVE
+	depends on BR2_PACKAGE_QT5SVG
+	depends on BR2_PACKAGE_QT5LOCATION
+	depends on BR2_PACKAGE_QT5GAMEPAD
+	help
+	  Vesc tool
+
+	  https://github.com/vedderb/vesc_tool/

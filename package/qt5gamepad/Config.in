@@ -1,0 +1,9 @@
+config BR2_PACKAGE_QT5GAMEPAD
+	bool "qt5gamepad"
+	help
+	  Qt is a cross-platform application and UI framework for
+	  developers using C++.
+
+	  This package corresponds to the qt5gamepad module.
+
+	  https://doc.qt.io/qt-5/qtgamepad-index.html

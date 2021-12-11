@@ -1,0 +1,2 @@
+source "$BR2_EXTERNAL_VESC_OS_PATH/package/qt5gamepad/Config.in"
+source "$BR2_EXTERNAL_VESC_OS_PATH/package/vesc-tool/Config.in"
