@@ -1,5 +1,5 @@
 BR2_TARGET_GENERIC_ISSUE="Welcome to VESC Tool OS"
-BR2_ROOTFS_OVERLAY="$(BR2_EXTERNAL_VESC_OS_PATH)/rootfs-overlay"
+BR2_ROOTFS_OVERLAY="$(BR2_EXTERNAL_VESC_OS_PATH)/rootfs-overlay/qmlui"
 
 # Raspberry Pi version-specific
 BR2_arm=y

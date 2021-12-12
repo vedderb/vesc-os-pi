@@ -41,10 +41,22 @@ make BR2_EXTERNAL=../ vesc_rpi4_defconfig
 make BR2_EXTERNAL=../ BR2_JLEVEL=12
 ```
 
+### Variants
+The commands above will generate an image that starts VESC Tool in Qml UI mode. It is also possible to start the mobile version or the full desktop version by using one of the following configs (depending on your raspberry pi version)
+
+```
+vesc_rpi3_mobile_defconfig
+vesc_rpi3_full_defconfig
+vesc_rpi4_mobile_defconfig
+vesc_rpi4_full_defconfig
+```
+
+## Write to SD Card
+
 The generated image will be in `buildroot/output/images/sdcard.img`. To write the image to the SD card, use:
 
 ```
-sudo dd if=output/image/sdcard.img of=/dev/[card_id] bs=1M
+sudo dd if=output/images/sdcard.img of=/dev/[card_id] bs=1M
 ```
 
 Make so to wait for the copy to finish before unplugging the card. Also make sure that the device you write the image to really is the SD-card and not some other drive - dd is happy to overwrite all data you point it at without asking you.

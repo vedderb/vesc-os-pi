@@ -1,0 +1,26 @@
+#!/bin/sh
+#
+# Start VESC Tool
+#
+
+case "$1" in
+  start)
+    echo "Starting VESC Tool..."
+    modprobe raspberrypi_ts
+    export QT_QPA_EGLFS_HIDECURSOR=1
+    /usr/bin/vesc_tool --loadQmlVesc --retryConn
+    ;;
+  stop)
+    echo -n "Stopping VESC Tool..."
+    killall vesc_tool
+    ;;
+  restart|reload)
+    "$0" stop
+    "$0" start
+    ;;
+  *)
+    echo $"Usage: $0 {start|stop|restart}"
+    exit 1
+esac
+
+exit $?
