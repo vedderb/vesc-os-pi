@@ -1,8 +1,0 @@
-#!/bin/sh
-#
-# Show splash screen
-#
-
-fbv /splash.png &
-
-exit $?
