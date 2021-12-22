@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-VESC_TOOL_VERSION = d4df7aa2d22f4c04220ccc0945c8cb8c4f0bacc2
+VESC_TOOL_VERSION = ead7848c47ec9305fadedd0fc9f9ad1c2db5db54
 VESC_TOOL_SITE = $(call github,vedderb,vesc_tool,$(VESC_TOOL_VERSION))
 VESC_TOOL_LICENSE = GPLv3
 VESC_TOOL_LICENSE_FILES = LICENSE
