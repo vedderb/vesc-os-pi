@@ -8,7 +8,7 @@ This is suitable for using the Raspberry Pi as e.g. a dashboard for a car, motor
 
 ## Requirements
 
-For buildroot [https://buildroot.org/downloads/manual/manual.html#requirement-mandatory]()
+For buildroot [https://buildroot.org/downloads/manual/manual.html#requirement-mandatory](https://buildroot.org/downloads/manual/manual.html#requirement-mandatory)
 
 These should be installed on most Linux-systems and/or easy to find. On debian-based systems, such as Ubuntu, a good start is
 
@@ -59,7 +59,7 @@ The generated image will be in `buildroot/output/images/sdcard.img`. To write th
 sudo dd if=output/images/sdcard.img of=/dev/[card_id] bs=1M
 ```
 
-Make so to wait for the copy to finish before unplugging the card. Also make sure that the device you write the image to really is the SD-card and not some other drive - dd is happy to overwrite all data you point it at without asking you.
+Make sure to wait for the copy to finish before unplugging the card. Also make sure that the device you write the image to really is the SD-card and not some other drive - dd is happy to overwrite all data you point it at without asking you.
 
 One way to find \[card_id\] is to run
 
